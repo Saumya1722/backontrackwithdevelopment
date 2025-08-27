@@ -5,78 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        table, tr,td,th
+        table,tr,td,th
         {
-            border: 1px solid red;
-            border-collapse: collapse;
+            border:1px solid black;
+            border-collapse:collapse;
+            text-align: center;
+            caption-side: bottom;
         }
     </style>
 </head>
 <body>
-    
-<table>
-<tr>
-    <td>Month</td>
-    <td>Steps</td>
-</tr>
-<tr>
-    <td>Jan</td>
-    <td>100</td>
-</tr>
-<tr>
-    <td>Feb</td>
-    <td>200</td>
-</tr>
-<tr>
-    <td>Mar</td>
-    <td>300</td>
-</tr>
-<tr>
-    <td>Apr</td>
-    <td>400</td>
-</tr>
-<tr>
-    <td>Total</td>
-    <td>1000</td>
-    
-</tr>
-</table>
-<br>
-<table>
-    <thead>
+    <table>
+        <caption>Bill history</caption>
         <tr>
-            <th>Month</th>
-            <th>Steps</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Jan</td>
-            <td>100</td>
+       <th>Months</th>
+       <th>Expenses</th>
+           
         </tr>
         <tr>
-            <td>Feb</td>
-            <td>200</td>
+       <td>Jan</td>
+       <td rowspan="2">100</td>
         </tr>
-        <tr>
-            <td>Mar</td>
-            <td>300</td>
-        </tr>
-        <tr>
-            <td>Apr</td>
-            <td>400</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Total</td>
-            <td>1000</td>
-            
-        </tr>
-    </tfoot>
-</table>
 
+        <tr>
+          <td>Feb</td>
+          <!-- <td>200</td> -->
+        </tr>
+
+        <tr>
+         <td>March</td>
+         <td>300</td>
+        </tr>
+
+        <tr>
+         <td colspan="2">April</td>
+         <!-- <td>400</td> -->
+        </tr>
+
+        <tr>
+         <th>Total</th>
+         <th>1000</th>
+        </tr>
+    </table>
 </body>
 </html>
