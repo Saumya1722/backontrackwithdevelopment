@@ -1,0 +1,32 @@
+h1{
+    text-shadow: 4px 4px;
+    /* text shadow: horizontal, vertical, blur, color */
+    text-shadow: 4px 4px 4px red;
+    text-shadow: 4px 4px 4px red,10px 10px 10px green;
+}
+
+.box
+{
+    border:2px solid black;
+    color:red;
+    background-color: blueviolet;
+
+    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 5px blue;
+    box-shadow: -5px -5px 5px blue, 10px 10px 8px yellow;
+    width: 130px;
+    height:200px;
+}
+
+/* border using shadow in box */
+.box1
+{
+    background-color: pink;
+    color:red;
+/* border using shadow in box */
+    /* box-shadow: 10px 10px 10px 10px red; */
+    box-shadow: 10px 10px 8px blue,10px 10px 8px black inset;
+    /* spread radius in shadow  */
+     /* box-shadow: 10px 10px 8px  #888888; */
+    margin:40px;
+}
