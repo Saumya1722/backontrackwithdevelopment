@@ -1,0 +1,27 @@
+.box
+{
+    /* If content more than max height , content come out of the box */
+    /* max-height: 100px; */
+    /* If content more than min-height, box resize itself according to content. */
+    /* min-height: 200px; */
+    border:3px solid black;
+    /* overflow:scroll; */
+    min-width: 100px;
+    /* max-width: 85px; */
+}
+
+.div1
+{
+    border: 3px solid black;
+    margin: 20px;
+    height:120px;
+    width:200px;
+    /* By default, overflow is visible. */
+    /* overflow:visible; */
+    /* overflow:hidden; */
+    /* overflow:scroll; */
+    /* overflow:auto; */
+    overflow-x: scroll;
+    /* overflow-y: scroll; */
+
+}
