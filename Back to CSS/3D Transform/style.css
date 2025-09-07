@@ -1,0 +1,22 @@
+div{
+    background-color: brown;
+    height:100px;
+    width:100px;
+    border:1px solid black;
+}
+
+.translated
+{
+    /* perspective activates z-axis (z=0 to eyes)*/
+    transform: perspective(15px) translateZ(-10px);
+}
+
+.scaled
+{
+    margin-left:200px;
+    /* rotate doesn't need perspective for transformation
+    but scale needs? */
+    /* transform:rotateZ(30deg); */
+    transform: perspective(200px) scaleZ(6) rotateX(45deg) rotateY(30deg);
+    /* We have to add perspective to change something in z-axis either it is transform or scaling */
+}
