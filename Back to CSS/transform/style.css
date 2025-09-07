@@ -1,0 +1,40 @@
+.box1
+{
+    /* border:2px solid black; */
+    background-color: aquamarine;
+    transform:translate(50px,100px);   
+    /* transform: translateX(100px); */
+    /* transform:translateY(300px); */
+
+    /* rotate moves element in ACW in -deg and CW when in +deg */
+    /* transform: rotate(-45deg); */
+    /* transform: rotate(45deg); */
+color:black;
+    margin:100px;
+    /* transform:scale(2,1); */
+    /* transform: scale(3.5,7); */
+/* transform:scaleX(3); */
+/* transform:scaleY(6); */
+
+/* lie to left */
+ /* transform:skew(45deg);     */
+
+/* lie to right */
+/* transform:skew(-45deg); */
+
+/* transform:skew(-135deg); */
+/* transform:skew(90deg); */
+/* transform:skewX(3);
+transform:skewY(5);  */
+}
+
+.box2{
+    background-color: red;
+    color:white;
+    margin:30px;
+    /* parameters in matrix:  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+   
+      transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+        transform: matrix(1, -0.3, 0, 1, 50, 150);
+}
