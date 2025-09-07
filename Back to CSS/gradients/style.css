@@ -1,0 +1,76 @@
+.box
+{
+    border:3px solid black;
+    height: 150px;
+    width: 200px;
+
+    /* By default , gradient is top to down direction. */
+    /* background-image: linear-gradient(orange,yellow); */
+
+    /* gradient in left to right direction */
+    /* background-image: linear-gradient(to right,red,yellow); */
+
+    /* gradient in right to left direction */
+    /* background-image: linear-gradient(to left,black,blue); */
+
+    /* gradient in top to bottom direction */
+    /* background-image: linear-gradient(to bottom,black,blue); */
+
+    /* gradient in bottom to top direction */
+    /* background-image: linear-gradient(to top,black,blue); */
+
+    /* gradient to top left direction */
+    /* background-image: linear-gradient(to top left,black,blue,red); */
+
+    /* gradient to top right direction */
+    /* background-image: linear-gradient(to top right,black,blue,red); */
+
+    /* gradient to bottom left direction */
+    /* background-image: linear-gradient(to bottom left,black,blue,red); */
+
+    /* gradient  to bottom right direction */
+    /* background-image: linear-gradient(to bottom right,black,blue,red); */ 
+
+    /* 45 deg gradient */
+    /* background-image: linear-gradient(45deg,green,orange); */
+
+    /* 90 deg gradient */
+    /* background-image: linear-gradient(90deg,green,orange); */
+
+    /* 210 deg gradient */
+    background-image: linear-gradient(210deg,green,orange);
+
+    /* background-image: linear-gradient(to bottom,rgba(255,0,0,0),rgba(0,0,255,0)); */
+}
+
+.mydiv
+{
+    border:5px solid black;
+    height:200px;
+    margin:10px;
+    width:300px;
+    /* background-image: radial-gradient(red,blue,orange); */
+    /* background-image: radial-gradient(circle,red,blue,orange); */
+    background-image: radial-gradient(circle, red 5%,blue 20%,orange 50%);
+    /* background-image: radial-gradient(red,blue,orange); */
+
+
+}
+
+.conicdiv{
+    border:3px solid red;
+    height: 300px;
+    width: 500px;
+    margin: 30px;
+    /* background-image: conic-gradient(red,pink,orange); */
+    /* background-image: conic-gradient(red,blue,orange,green,black); */
+    /* background-image: conic-gradient(red 0deg,blue 30deg,orange 45deg,green 60deg,black 90deg,pink 270deg); */
+        /* background-image: conic-gradient(at 60% 45%, red,black, green); */
+        /* piechart */
+        /* background-image: conic-gradient(lightgreen 0deg,lightgreen 90deg,lightblue 90deg, lightblue 180deg, orange 180deg, orange 270deg,
+        purple 270deg,purple 360deg); */
+        border-radius: 50%;
+
+          background-image: repeating-conic-gradient(blue 10%, black 20%);
+
+}
