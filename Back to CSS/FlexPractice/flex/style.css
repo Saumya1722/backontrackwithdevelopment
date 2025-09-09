@@ -1,0 +1,117 @@
+.container
+{
+    height:400px;
+    border: 1px solid green;
+    display:flex;
+    /* stack to main axis (horizontal) */
+    /* display:flex;   */
+    
+    /* stack elements to horizontal direction  */
+    /* flex-direction: row; */
+
+    /* stack elements to vertical direction  */
+    /* flex-direction: column; */
+
+    /* stack elements to reverse of horizontal direction  */
+    /* flex-direction: row-reverse; */
+    
+    /* stack elements to reverse of vertical direction  */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap keeps the width of box intact even if it is squeezed but if it squeezed more than it will move boxes to next line*/
+    /* flex-wrap: wrap; */
+
+    /* flex-wrap keeps the width of box intact even if it is squeezed but if it squeezed more than it will not move boxes to next line ,boxes will be
+    in same line only */
+    /* flex-wrap: nowrap; */
+
+    /* reverse of wrap and moves last boxes in uppward direction */
+    flex-wrap: wrap-reverse;
+
+    /* flex-flow: row nowrap; */
+    /* flex-flow: row wrap; */
+    /* flex-flow: row wrap-reverse; */
+    /* flex-flow: column wrap; */
+    /* flex-flow:column nowrap; */
+    /* flex-flow:column wrap-reverse; */
+    /* flex-flow: row-reverse wrap; */
+    /* flex-flow:row-reverse nowrap; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    /* flex-flow: column-reverse wrap; */
+    /* flex-flow:column-reverse nowrap; */
+    /* flex-flow: column-reverse wrap-reverse;  */
+
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+    /* stack elements in center of main axis */
+    /* justify-content: center; */
+
+    /* equal spacing around elements but not in left of first element and right of last element */
+    /* justify-content: space-around; */
+    
+    /* equal spacing around all elements */
+    /* justify-content: space-evenly; */
+
+    /* equal spacing between each elements */
+    /* justify-content: space-between; */
+
+    /* align elements to first of vertical axis */
+    /* align-items: flex-start; */
+
+    /* align elements to last of vertical axis */
+    /* align-items: flex-end; */
+
+    /* align elements to center of vertical axis */
+    /* align-items: center; */
+
+    /* align elements to full height of vertical axis(stretch) */
+    /* align-items: stretch; */
+
+    /* elements and value inside is in center */
+    /* align-items: center;
+    justify-content: center; */
+
+    /* gap:10px; */
+
+    /* both rows align in top and there is no space between them */
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center; */
+
+    /* space between rows */
+    /* align-content: space-between; */
+
+    /* equal space between rows only */
+    /* align-content: space-around; */
+
+    /* equal space between and around rows */
+    /* align-content: space-evenly; */
+}
+
+.container2
+{
+    height:400px;
+    border:1px solid blue;
+    display: flex;
+
+    flex-wrap: wrap;
+    /* width:40px; */
+
+    /* align-items:baseline;
+    align-items: stretch; */
+    
+    /* elements and value inside is in center */
+    align-items: center;
+    justify-content: center;
+}
+
+.box
+{
+    border:1px solid red;
+    background-color:antiquewhite;
+    
+    /* By setting width of boxes, it is still squeezing.  */
+    width:100px;
+}
