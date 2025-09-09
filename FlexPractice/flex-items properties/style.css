@@ -1,0 +1,68 @@
+.container
+{
+    height:400px;
+    border:1px solid green;
+
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+
+    justify-content: center;
+    align-items: center;
+
+    align-content:flex-start;
+
+    /* gap:10px; */
+
+
+}
+
+.box
+{
+    background-color: aquamarine;
+    border:1px solid red;
+
+    /* box elements take same equal width */
+    /* flex-grow: 1; */
+
+    /* flex-basis increase width of flex item */
+    /* flex-basis:100px; */
+
+    /* width hides the content which overflows */
+    width:100px;
+}
+
+
+#box1{
+
+/* put box1 in last of all boxes */
+order: 1;
+/* flex-grow: 4; */
+
+/* it sets the shrinking speed of particular element */
+/* flex-shrink: 4; */
+}
+
+#box3
+{
+ /* put box3 after box1 position */
+    order:3;
+    /* Applying flex-grow to particular element box will set width of that box only */
+    /* flex-grow: 2; */
+
+    /* set width of element box3 which is equal to box1 */
+    /* flex-grow:4; */
+
+    /* it sets the shrinking speed of particular element
+    shrink is less than box1 shrink speed relatively */
+    /* flex-shrink: 2; */
+}
+
+#box2
+{
+/* put box2 in between box1 and box3 */
+    /* order:2; */
+
+/* keeping same order as previous one will show no change */
+    order:3;
+}
