@@ -1,0 +1,74 @@
+.container{
+    border:1px solid black;
+    background-color: yellow;
+
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    grid-gap:10px;
+
+    height:700px;
+    width: 600px;
+
+    /*all content will shift to left of horizontal axis  */
+    /* justify-content: start; */
+     /*all content will shift to right of horizontal axis  */
+    /* justify-content:end ; */
+    /* all content will be in center */
+    /* justify-content: center; */
+    /* space between content */
+    /* justify-content: space-between; */
+    /*space in left and right of each box -
+    space in left and rightmost side is less and space between box is more*/
+    /* justify-content: space-around; */
+    /* space is equal both in between and left and rightmost side */
+    /* justify-content: space-evenly; */
+    
+    /* align-items: start;
+    align-items: end; */
+    /* baseleine is depended on content */
+    /* align-items: baseline; */
+    /* stretch will take size of whole grid */
+    /* align-items: stretch; */
+
+    /* whole grid items in center along vertical axis  */
+    align-content:center ;
+  /* whole grid items in left upper side  along vertical axis  */
+    align-content: start;
+     /* whole grid items has space in between then in rowwise along vertical axis  */
+    align-content: space-between;
+     /* whole grid items has in between and in left and right less space  along vertical axis  */
+    align-content: space-around;
+     /* whole grid items has equal space in between and in left and right also  along vertical axis  */
+     align-content: space-evenly;
+}
+
+.box
+{
+    border:1px solid red;
+    background-color: pink;
+}
+
+/* align-self and justify-self */
+/* #box1
+{ */
+    /* left shift to horizontal axis of grid-item */
+    /* justify-self: start; */
+  /* right shift to horizontal axis of grid-items */
+    /* justify-self: end; */
+      /* center to horizontal axis of grid-items */
+      /* justify-self: center; */
+
+      /* start of grid items along vertical axis*/
+      /* align-self:self-start; */
+       /* end of grid items along vertical axis*/
+       /* align-self: self-end; */
+        /* center of grid items along vertical axis*/
+    /* align-self: center; */
+
+    /* width same as content */
+    /* justify-self: center;
+    align-items: center; */
+
+/* } */
