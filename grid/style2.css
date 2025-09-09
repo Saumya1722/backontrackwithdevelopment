@@ -1,0 +1,33 @@
+.container{
+    height:700px;
+    border:1px solid red;
+    background-color: pink;
+    /* to display grid */
+    display:grid;
+    /* to add row  in grid */
+    grid-template-rows: repeat(4,1fr);
+    /* to add column in grid */
+    grid-template-columns: repeat(3,1fr);
+    /* adding gap in grid */
+    grid-gap:10px;
+}
+
+.box{
+    border:1px solid green;
+    background-color: lightgreen;
+    /* height: 100px;
+    width:100px; */
+}
+
+#box1
+{
+
+    /* grid-column-start:1;
+    grid-column-end: 4; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* grid-area:grid-row-start/grid-column-start/grid-row-end/grid-column-end */
+    grid-area: 1/1/3/4;
+}
