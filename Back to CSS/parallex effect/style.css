@@ -1,0 +1,127 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    /* Height of wrapper will equal to viewport */
+    height:100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    /* space between z-plane and your eyes */
+    perspective:10px;
+}
+
+.container
+{
+    position:relative;
+    /* by default display: flex;   is row */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+ 
+
+}
+
+.background{
+    /* make background image far and big */
+    transform: translateZ(-30px)  scale(5);
+   
+
+}
+
+.foreground{
+    /* make foreground image little far and slightly big */
+    transform: translateZ(-10px) scale(1);
+  
+}
+
+.background,  .foreground
+{
+    /* allow overlapping over ancestor element */
+    position:absolute;
+    /* relative to parent */
+    height:100%;
+    /* relative to parent */
+    width: 100%;
+ /* z-index:-1;   brings background content (Adventure)above */
+ z-index:-1;
+ /* image cover all page */
+ object-fit: cover;
+}  
+
+
+h1{
+    position:absolute;
+    top:5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color:white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+section{
+    background-color: black;
+    color:white;
+    padding:5rem 0;
+
+}
+
+.heading1
+{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text
+{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin:5rem 0;
+}
+
+.bg{
+    position: relative;
+    width:100%;
+    background-attachment: fixed;
+    height: 500px;
+    /* background image will cover whole viewport */
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url(bikecat.jpeg);
+    
+    
+}
+.bg2{
+    background-image: url(catparaglide.jpeg);
+
+}
+.bg3{
+    background-image: url(catsurfing.jpeg);
+
+}
+
+.desc
+{
+    position: absolute;
+    background-color: white;
+    padding:0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateX(-50%);
+    color:black;
+    font-size: 3.5rem;
+    font-weight: 600;
+  
+}
+
