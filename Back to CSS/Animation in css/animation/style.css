@@ -1,0 +1,88 @@
+.container
+{
+    border:1px solid black;
+    background-color: plum;
+    width: 100%;
+    height: 300px;
+
+}
+
+.box
+{
+    background-color: cadetblue;
+    border:2px solid green;
+    width: 300px;
+    height: 298px;
+
+    animation-name:saumya;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in; */
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* by default: animation-direction is normal */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+
+}
+
+/* @keyframes saumya
+{
+    from{
+        width: 212px;
+    }
+
+    to {
+         width: 800px;
+    width: 100%;
+    }
+} */
+
+/* @keyframes saumya
+{
+    0%
+    {
+        width: 300px;
+        background-color: aqua;
+    }
+
+    30%
+    {
+              width: 35%;
+        background-color:red;
+    }
+    60%
+    {
+              width: 70%;
+        background-color: yellow;
+    }
+    100%
+    {
+              width: 100%;
+        background-color: aqua;
+    }
+} */
+
+
+@keyframes saumya
+{
+    0%
+    {
+        width: 300px;
+        background-color: orange;
+    }
+
+   50%
+    {
+        width: 35%;
+        background-color: white;
+    }
+
+    100%
+    {
+        width:100%;
+        background-color: green;
+    }
+}
