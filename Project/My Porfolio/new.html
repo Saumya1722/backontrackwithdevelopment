@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional & Other Skills</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 100px;
+      padding-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    /* Vertical bars section */
+    .vertical-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 400px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .loading {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .loadbar {
+      position: relative;
+      height: 30px;
+      width: 100%;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .fill {
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #cc5303;
+      border-radius: 15px;
+      transition: width 2s ease;
+    }
+
+    .count {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      line-height: 30px;
+    }
+
+    /* Circular bars section */
+
+    .circular-bars {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;             
+  justify-content: center; 
+    }
+    
+    .circular-title
+    {
+       font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  width: 100%;               
+  text-align: center;
+    }
+
+    .circle-container {
+    flex: 1 1 120px;       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 120px; 
+    }
+
+
+    .circle {
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .circle svg {
+      transform: rotate(-90deg);
+      width: 80px;
+      height: 80px;
+    }
+
+    .circle circle {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+    }
+
+    .circle .bg {
+      stroke: #eee;
+    }
+
+    .circle .progress {
+      stroke: #cc5303;
+      stroke-dasharray: 2 * 3.1416 * 35; /* circumference */
+      stroke-dashoffset: 2 * 3.1416 * 35;
+      transition: stroke-dashoffset 2s linear;
+    }
+
+    .circle .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+    }
+
+    .circle-label {
+      font-size: 0.9rem;
+      text-align: center;
+      max-width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vertical Bars -->
+  <div class="vertical-bars">
+    <div class="section-title">Technical Skills</div>
+
+    <div class="loading">HTML</div>
+    <div class="loadbar" data-percentage="90">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+
+    <div class="loading">CSS</div>
+    <div class="loadbar" data-percentage="85">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+
+    <div class="loading">JavaScript</div>
+    <div class="loadbar" data-percentage="70">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+
+    <div class="loading">React</div>
+    <div class="loadbar" data-percentage="50">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+
+    <div class="loading">MongoDB</div>
+    <div class="loadbar" data-percentage="30">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+
+    <div class="loading">Github</div>
+    <div class="loadbar" data-percentage="80">
+      <div class="fill"></div>
+      <div class="count">0%</div>
+    </div>
+  </div>
+
+  <!-- Circular Bars -->
+  <div class="circular-bars">
+ <div class="circular-title">Professional Skills</div><br>
+    <div class="circle-content">
+      <div class="circle" data-percentage="75">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">Node.js</div>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" data-percentage="60">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">Express</div>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" data-percentage="85">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">MongoDB</div>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" data-percentage="50">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">Docker</div>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" data-percentage="40">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">Git</div>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" data-percentage="70">
+        <svg>
+          <circle class="bg" cx="40" cy="40" r="35"></circle>
+          <circle class="progress" cx="40" cy="40" r="35"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="circle-label">VS Code</div>
+    </div>
+  </div>
+
+<script>
+  // Animate vertical bars
+  document.querySelectorAll(".loadbar").forEach(bar => {
+    const fill = bar.querySelector(".fill");
+    const count = bar.querySelector(".count");
+    const target = parseInt(bar.dataset.percentage);
+    let current = 0;
+
+    setTimeout(() => { fill.style.width = target + "%"; }, 100);
+
+    let interval = setInterval(() => {
+      if(current < target){
+        current++;
+        count.textContent = current + "%";
+      } else {
+        clearInterval(interval);
+      }
+    }, 20);
+  });
+
+  // Animate circular bars
+  document.querySelectorAll(".circle").forEach(circle => {
+    const progress = circle.querySelector(".progress");
+    const percentageText = circle.querySelector(".percentage");
+    const target = parseInt(circle.dataset.percentage);
+    const radius = 35;
+    const circumference = 2 * Math.PI * radius;
+    let current = 0;
+
+    progress.style.strokeDasharray = circumference;
+    progress.style.strokeDashoffset = circumference;
+
+    let interval = setInterval(() => {
+      if(current < target){
+        current++;
+        const offset = circumference - (current / 100) * circumference;
+        progress.style.strokeDashoffset = offset;
+        percentageText.textContent = current + "%";
+      } else {
+        clearInterval(interval);
+      }
+    }, 20);
+  });
+</script>
+
+</body>
+</html>
