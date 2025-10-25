@@ -1,0 +1,29 @@
+Things I covered:
+Window, DOM, BOM
+Methods in JS: 
+1.getElementById()
+2.getElementByClass()
+3.getElementByTagName()
+4.querySelector()
+5.querySelectorAll()
+Property of ELement in JS:
+1.innerHTML
+2.outerHTML
+3.textContent
+4.innerHTML
+Adding New Element/Content:
+1.createElement()
+2.appendChild()
+3.insertAdjacentHTML()
+  beforeBegin
+  afterBegin
+  beforeEnd
+  afterEnd
+Remove Element in JS:
+  removeChild()
+Style page content:
+  1. .style
+  2. .cssText
+  3. .setAttribute
+  4. .className
+  5. .classList (add(), remove(), toggle(), contains())
